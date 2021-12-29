@@ -51,4 +51,16 @@ class PhoneNumber extends Field
             'onlyCustomFormats' => true,
         ]);
     }
+
+    /**
+     * Tells VueJS to apply defaukt phone prefix
+     *
+     * @return PhoneNumber
+     */
+    public function withDefaultPrefix($prefix = null)
+    {
+        return $this->withMeta([
+            'defaultPrefix' => $prefix,
+        ]);
+    }
 }

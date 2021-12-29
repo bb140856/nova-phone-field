@@ -50,7 +50,7 @@ export default {
 
     methods: {
         setInitialValue() {
-            this.value = this.field.value || '';
+            this.value = this.field.value || this.field.defaultPrefix || '';
         },
 
         setBuiltInMasks() {

@@ -1,7 +1,7 @@
 <template>
     <panel-item :field="field">
         <template slot="value">
-            <a :href="`tel:+${unmaskedValue}`" v-if="field.value" class="no-underline text-primary">
+            <a :href="`tel:+${unmaskedValue}`" v-if="field.value" class="no-underline dim text-primary">
                 {{ field.value }}
             </a>
             <p v-else>&mdash;</p>
